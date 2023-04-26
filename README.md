@@ -966,6 +966,7 @@ spawn(function()
                 if Options["Farming Beri:Farming Monter:Select Teleport Monter"].Value[Value.Name] and Value:FindFirstChild("HumanoidRootPart") and Value:FindFirstChild("Humanoid") and Value.Humanoid.Health > 0 then
                 					print(Value)
                                     print(Toggles["Farming Beri:Farming Monter:Teleport Monter"].Value)
+                                    print(Options["Farming Beri:Farming Monter:Select Teleport Monter"].Value)
                     if Options["Farming Beri:Farming Monter:Settings:Type Position"].Value == "X" then
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Value.HumanoidRootPart.Position + Vector3.new(0, 0, Options["Farming Beri:Farming Monter:Settings:Distance"].Value), Value.HumanoidRootPart.Position);
                         if Toggles["Farming Beri:Farming Monter:Settings:Using One Hit"].Value then Value.Humanoid.Health = 0 end;
